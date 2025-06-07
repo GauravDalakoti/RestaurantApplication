@@ -45,6 +45,10 @@ app.use('/api/contact', contactRoutes);
 app.use('/api/cart',cartRoutes)
 app.use('/api/admin', dashboardRoutes);
 
+app.get("/", (req, res) => {
+  res.send("Real-Time Editor Backend is running");
+});
+
 // Start server
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
