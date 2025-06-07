@@ -46,7 +46,7 @@ app.use('/api/cart',cartRoutes)
 app.use('/api/admin', dashboardRoutes);
 
 app.get("/", (req, res) => {
-  res.send("Real-Time Editor Backend is running");
+  res.send("server is running");
 });
 
 // Start server
