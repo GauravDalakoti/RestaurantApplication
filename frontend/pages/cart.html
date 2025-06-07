@@ -1,0 +1,108 @@
+<section class="section">
+
+    <div class="container">
+
+        <section class="section" style="background-color: var(--neutral-light);">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Cart Items</h2>
+                </div>
+                <div class="cart-items">
+                    <!-- cart items will be loaded dynamically -->
+                </div>
+                <div class="cart-summary">
+
+                </div>
+
+                <div class="checkout-detail">
+
+                </div>
+
+            </div>
+        </section>
+    </div>
+</section>
+
+<style>
+    .checkout-detail {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: none;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .checkout-content {
+        background-color: var(--white);
+        margin: 10% auto;
+        padding: var(--space-lg);
+        border-radius: var(--radius-md);
+        width: 80%;
+        max-width: 600px;
+        box-shadow: var(--shadow-lg);
+        height: 70vh;
+        overflow-x: scroll;
+    }
+
+    .close {
+        color: var(--neutral-medium);
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .close:hover {
+        color: var(--neutral-dark);
+    }
+
+    .message-body {
+        margin-top: var(--space-md);
+        padding: var(--space-md);
+        background-color: var(--neutral-light);
+        border-radius: var(--radius-md);
+    }
+
+    /* Unread message style */
+    .unread {
+        background-color: rgba(255, 152, 0, 0.1);
+    }
+
+    .form-group {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    #name,
+    #phone,
+    #email,
+    #address,
+    #payment,
+    #notes {
+        border: 2px solid #333;
+        padding: 10px 14px;
+        border-radius: 8px;
+        background-color: #fdfdfd;
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 15px;
+        width: 100%;
+        transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    #name:focus,
+    #phone:focus,
+    #email:focus,
+    #address:focus,
+    #payment:focus,
+    #notes:focus {
+        border-color: #e67e22;
+        box-shadow: 0 0 0 3px rgba(230, 126, 34, 0.2);
+        outline: none;
+    }
+</style>

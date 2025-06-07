@@ -1,0 +1,26 @@
+<div class="dashboard">
+  <div class="dashboard-sidebar">
+    <h3>Admin Dashboard</h3>
+    <nav class="dashboard-nav">
+      <a href="/admin">Dashboard</a>
+      <a href="/admin/menu">Menu Management</a>
+      <a href="/admin/reservations" class="active">Reservations</a>
+      <a href="/admin/messages">Messages</a>
+      <a href="#" id="logout-link">Logout</a>
+    </nav>
+  </div>
+  
+  <div class="dashboard-content">
+    <div class="dashboard-header">
+      <h2>Reservations</h2>
+      <p>View and manage customer reservations.</p>
+    </div>
+    
+    <div id="message-container"></div>
+    
+    <div id="reservations">
+      <!-- Reservations will be loaded dynamically -->
+      <div class="loader"></div>
+    </div>
+  </div>
+</div>

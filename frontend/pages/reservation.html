@@ -1,0 +1,87 @@
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Make a Reservation</h2>
+    </div>
+    
+    <div id="message-container"></div>
+    
+    <div class="form-container">
+      <form id="reservation-form">
+        <div class="form-group">
+          <label for="reservation-name" class="form-label">Full Name</label>
+          <input type="text" id="reservation-name" class="form-input" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="reservation-email" class="form-label">Email</label>
+          <input type="email" id="reservation-email" class="form-input" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="reservation-phone" class="form-label">Phone Number</label>
+          <input type="tel" id="reservation-phone" class="form-input" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="reservation-date" class="form-label">Date</label>
+          <input type="date" id="reservation-date" class="form-input" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="reservation-time" class="form-label">Time</label>
+          <select id="reservation-time" class="form-select" required>
+            <option value="">Select a time</option>
+            <option value="11:00">11:00 AM</option>
+            <option value="11:30">11:30 AM</option>
+            <option value="12:00">12:00 PM</option>
+            <option value="12:30">12:30 PM</option>
+            <option value="13:00">1:00 PM</option>
+            <option value="13:30">1:30 PM</option>
+            <option value="14:00">2:00 PM</option>
+            <option value="18:00">6:00 PM</option>
+            <option value="18:30">6:30 PM</option>
+            <option value="19:00">7:00 PM</option>
+            <option value="19:30">7:30 PM</option>
+            <option value="20:00">8:00 PM</option>
+            <option value="20:30">8:30 PM</option>
+            <option value="21:00">9:00 PM</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="reservation-guests" class="form-label">Number of Guests</label>
+          <select id="reservation-guests" class="form-select" required>
+            <option value="">Select number of guests</option>
+            <option value="1">1 Person</option>
+            <option value="2">2 People</option>
+            <option value="3">3 People</option>
+            <option value="4">4 People</option>
+            <option value="5">5 People</option>
+            <option value="6">6 People</option>
+            <option value="7">7 People</option>
+            <option value="8">8 People</option>
+            <option value="9">9 People</option>
+            <option value="10">10 People</option>
+            <option value="11">11 People</option>
+            <option value="12">12 People</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="reservation-message" class="form-label">Special Requests (Optional)</label>
+          <textarea id="reservation-message" class="form-textarea"></textarea>
+        </div>
+        
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Make Reservation</button>
+      </form>
+    </div>
+    
+    <div class="reservation-info" style="margin-top: var(--space-lg); text-align: center;">
+      <h3>Reservation Information</h3>
+      <p>For large parties (more than 12 people), please contact us directly.</p>
+      <p>Phone: (123) 456-7890</p>
+      <p>Email: reservations@SpiceTrailrestaurant.com</p>
+    </div>
+  </div>
+</section>
