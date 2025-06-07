@@ -8,11 +8,11 @@ import { checkUserAuth } from './js/auth.js';
 const initApp = async () => {
   // Check if user is logged in
   await checkUserAuth();
-  
+
   // Set up header and footer
   setupHeader();
   setupFooter();
-  
+
   // Set up router
   setupRouter();
 };

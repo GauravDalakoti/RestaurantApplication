@@ -2,6 +2,7 @@ import { menuApi } from '../api.js';
 import { navigate } from '../router.js';
 
 export const initHomePage = async () => {
+
   try {
     // Display loading state
     const featuredSection = document.querySelector('.featured-dishes');

@@ -1,9 +1,9 @@
 import express from 'express';
-import { 
-  getMenuItems, 
-  getMenuItemById, 
-  createMenuItem, 
-  updateMenuItem, 
+import {
+  getMenuItems,
+  getMenuItemById,
+  createMenuItem,
+  updateMenuItem,
   deleteMenuItem,
   getFeaturedItems
 } from '../controllers/menuController.js';
